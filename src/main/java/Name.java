@@ -5,15 +5,24 @@ import java.util.Scanner;
 public class Name {
 
     public static void main(String[] args ){
+        //creating object for scanner for input from the user
         Scanner scanner = new Scanner(System.in);
+        //prompting the user to input their name
         System.out.println("Hello! What is your name? ");
+        //when user inputs their name, it will go to next line and save to
+        //the string "name"
         String name = scanner.nextLine();
+        //declaring the variable to name.toLowerCase() will make it so even if the user
+        //uses lower case to input their name or upper case, the input will be accepted and return
+        //true since
         name = name.toLowerCase();
 
-        while (true);
-            if (name == "alice") {
-                System.out.println("");
+        while (true){
+            if (name == "alice" || name == "bob") {
+                System.out.println("Hello " +name+ "! Welcome back.");
+            } else if (name.equalsIgnoreCase("")) {
+                System.out.println("Sorry, you are not Alice nor Bob!");
+            }
         }
-
     }
 }
