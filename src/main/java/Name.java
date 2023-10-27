@@ -8,6 +8,12 @@ public class Name {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello! What is your name? ");
         String name = scanner.nextLine();
+        name = name.toLowerCase();
+
+        while (true);
+            if (name == "alice") {
+                System.out.println("");
+        }
 
     }
 }
